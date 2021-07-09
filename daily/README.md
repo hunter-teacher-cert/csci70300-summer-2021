@@ -9,7 +9,11 @@
 	3. Copy this file and SortDemoDriver.java into the ds/sort1 folder
 	4. Work through the lab (see comments in SortDemo.java
 	
-	
+### Searching
+	- Binary search resources: 
+	  - Video (iterative / loop): https://www.youtube.com/watch?v=hKI93hOfeIk
+	  - Video (recursive): https://www.youtube.com/watch?v=P3YID7liBug
+	  - https://www.baeldung.com/java-binary-search
 ## Day 1 - July 12
 ## Day 2 - July 13
 ## Day 3 - July 14
