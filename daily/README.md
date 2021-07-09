@@ -6,7 +6,7 @@
 ### Sorting Lab
 	1.Make a folder under your work repo named: ds
 	2. Make another folder under that named sort1
-	3. Copy this file and SortDemoDriver.java into the ds/sort1 folder
+	3. Copy SortDemo.java and SortDemoDriver.java into the ds/sort1 folder
 	4. Work through the lab (see comments in SortDemo.java
 	
 ### Searching
