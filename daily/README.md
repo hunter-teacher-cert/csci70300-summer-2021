@@ -1,6 +1,15 @@
 # Daily Assignments / Notes
 
 ## Day 0 - July 9
+### Class intro
+
+### Sorting Lab
+	1.Make a folder under your work repo named: ds
+	2. Make another folder under that named sort1
+	3. Copy this file and SortDemoDriver.java into the ds/sort1 folder
+	4. Work through the lab (see comments in SortDemo.java
+	
+	
 ## Day 1 - July 12
 ## Day 2 - July 13
 ## Day 3 - July 14
