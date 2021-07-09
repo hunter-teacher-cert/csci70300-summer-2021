@@ -29,6 +29,7 @@ public class SortDemo{
 
     /* Instance Variables */
     private ArrayList<Integer> data;  // to store the data
+
     private Random r; 
 
     
@@ -50,6 +51,10 @@ public class SortDemo{
 	
     }
 
+    public int get(int index){
+	return this.data.get(index);
+    }
+    
     /*
       return the index of the ArrayList data from index start to the end
       Example, if the arraylist has:
@@ -66,11 +71,16 @@ public class SortDemo{
 	
 	// loop from that variable to end and update smallIndex as needed
 	// your code here
+	int i;
+	for (i = smallIndex + 1; i < this.data.size(); i++){
 	
+	    if (this.data.get(i) < this.data.get(smallIndex)){
+		smallIndex = i;
+	    }
+
+	}
 	return smallIndex;
-
     }
-
 
     
     public void sort(){
@@ -90,46 +100,46 @@ public class SortDemo{
 
     /* If you finish the lab early you can get started on this */
     public int linearSearch(int value){
-	// loop through the ArrayList data
-	// and if the value you're searchign for is in the ArrayList, return it.
-	// return -1 if it isn't there.
+	    // loop through the ArrayList data
+	    // and if the value you're searchign for is in the ArrayList, return it.
+	    // return -1 if it isn't there.
 	
 	
-	return 0; // replace this return
-    }
+	    return 0; // replace this return
+	}
     
-    /* If you finish the lab early you can get started on this */
-    public int binarySearch(int value){
-	boolean replacethiswithrealexpression=false;
-	int lowerIndex = 0;
-	int upperIndex = data.size();
-	int middleIndex = data.size()/2;
+	/* If you finish the lab early you can get started on this */
+	public int binarySearch(int value){
+	    boolean replacethiswithrealexpression=false;
+	    int lowerIndex = 0;
+	    int upperIndex = data.size();
+	    int middleIndex = data.size()/2;
 	
-	/* if upper crosses lower it's not there and the lop should exit the loop
-	   and if the item is at middle you should exit the loop
+	    /* if upper crosses lower it's not there and the lop should exit the loop
+	       and if the item is at middle you should exit the loop
     
-           you have to replace the "replacethiswithrealexpression" boolean 
-           with a correct expression based on lowerIndex and upperIndex
-	*/
-	while (replacethiswithrealexpression)
-	    {
-		// update lower and upper.
-		// remember if value is less than data.get(middleIndex) you want to search next time
-		// from lower to the middle and otherwise from the middle to the upper.
-		//
-		// then update middleIndex based on new lowerIndex and upperIndex.
+	       you have to replace the "replacethiswithrealexpression" boolean 
+	       with a correct expression based on lowerIndex and upperIndex
+	    */
+	    while (replacethiswithrealexpression)
+		{
+		    // update lower and upper.
+		    // remember if value is less than data.get(middleIndex) you want to search next time
+		    // from lower to the middle and otherwise from the middle to the upper.
+		    //
+		    // then update middleIndex based on new lowerIndex and upperIndex.
 	    
-	    }
+		}
 	
-	/* replace this return to either return the value if it was found and -1
-	   if upperIndex and lowerIndex crossed
-	*/    
+	    /* replace this return to either return the value if it was found and -1
+	       if upperIndex and lowerIndex crossed
+	    */    
 	
-	return 0; // replace this return
-    }
+	    return 0; // replace this return
+	}
     
 	
-    public String toString(){
+	public String toString(){
 	return ""+data;
     };
 
