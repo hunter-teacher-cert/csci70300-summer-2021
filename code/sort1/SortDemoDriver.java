@@ -13,10 +13,10 @@ public class SortDemoDriver {
 	/* part 2 test lines */
 	int i;
 	i = sd.findSmallestIndex(0);
-	System.out.println("sd["+"] = "+sd.get(i)+" : " + sd);
+	System.out.println("sd["+ i +"] = "+sd.get(i)+" : " + sd);
 
 	i = sd2.findSmallestIndex(0);
-	System.out.println("sd2["+"] = "+sd2.get(i)+" : " + sd2);
+	System.out.println("sd2["+ i + "] = "+sd2.get(i)+" : " + sd2);
 	
 	/* part 3 test lines */
 	/*
