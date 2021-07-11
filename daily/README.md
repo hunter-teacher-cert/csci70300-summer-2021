@@ -15,6 +15,20 @@
 	  - Video (recursive): https://www.youtube.com/watch?v=P3YID7liBug
 	  - https://www.baeldung.com/java-binary-search
 ## Day 1 - July 12
+### Sorting lab and searching
+	1. finish sort lab (and search if time)
+### Maze solving
+	0. You can find the code for this unit in the ~code/maze~ folder
+       of the class site / repo.
+	1. Copy ~Maze.java~, ~MazeDriver.java~, and ~maze.dat~ into a new
+       folder named *maze* to a new folder in your repo *ds/maze*.
+	2. Compile and run ~MazeDriver.java~ and make sure you understand the code. 
+	3. Copy ~Knights.java~ into *ds/maze*.
+	4. Comment out the lines that solve the maze and uncomment the
+       lines that solve the knights tour in ~Driver.java~.
+	5. Modify ~Knights.java~ so that it solves the Knights
+       tour. Guidelines andhints are comments in the file.
+	
 ## Day 2 - July 13
 ## Day 3 - July 14
 ## Day 4 - July 15
