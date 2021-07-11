@@ -20,7 +20,7 @@
 ### Maze solving
 	0. You can find the code for this unit in the `code/maze` folder
        of the class site / repo.
-	1. Copy `Maze.java`, `MazeDriver.java`, and ~maze.dat~ into a new
+	1. Copy `Maze.java` , `MazeDriver.java` , and `maze.dat` into a new
        folder named *maze* to a new folder in your repo *ds/maze*.
 	2. Compile and run ~MazeDriver.java~ and make sure you understand the code. 
 	3. Copy `Knights.java` into *ds/maze*.
