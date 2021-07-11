@@ -20,13 +20,13 @@
 ### Maze solving
 	0. You can find the code for this unit in the `code/maze` folder
        of the class site / repo.
-	1. Copy `Maze.java` , `MazeDriver.java` , and `maze.dat` into a new
-       folder named *maze* to a new folder in your repo *ds/maze*.
-	2. Compile and run ~MazeDriver.java~ and make sure you understand the code. 
-	3. Copy `Knights.java` into *ds/maze*.
+	1. Copy Maze.java , MazeDriver.java , and maze.dat into a new
+       folder named maze to a new folder in your repo ds/maze.
+	2. Compile and run MazeDriver.java and make sure you understand the code. 
+	3. Copy `Knights.java` into ds/maze.
 	4. Comment out the lines that solve the maze and uncomment the
-       lines that solve the knights tour in ~Driver.java~.
-	5. Modify ~Knights.java~ so that it solves the Knights
+       lines that solve the knights tour in Driver.java.
+	5. Modify Knights.java so that it solves the Knights
        tour. Guidelines andhints are comments in the file.
 	
 ## Day 2 - July 13
