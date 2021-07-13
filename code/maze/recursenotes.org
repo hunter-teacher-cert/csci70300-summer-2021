@@ -1,18 +1,26 @@
 
-| Problem       | Base case            | recursive call(s)          | what to do when returning |
-|---------------+----------------------+----------------------------+---------------------------|
-| Factorial     | 1, if n = 0          | fact(n-1)                  | multiply                  |
-|---------------+----------------------+----------------------------+---------------------------|
-| Fibonacci     | 0 if n = 0           | fib(n-1)+fib(n-2)          | add                       |
-|               | 1 if n = 1           |                            |                           |
-|---------------+----------------------+----------------------------+---------------------------|
-| Merge Sort    | List is size 0 or 1  | msort(left half)           | merge                     |
-|               |                      | msort(right half)          |                           |
-|---------------+----------------------+----------------------------+---------------------------|
-| Binary Search | found or not in list | search lower or upper      | just return the value     |
-|---------------+----------------------+----------------------------+---------------------------|
-| maze          | at exit, at dead end | solve(unvisited neighbors) | modify the 2D array       |
-|               | at visited           |                            |                           |
+| Problem       | Base case                        | recursive call(s)          | what to do when returning |
+|---------------+----------------------------------+----------------------------+---------------------------|
+| Factorial     | 1, if n = 0                      | fact(n-1)                  | multiply                  |
+|---------------+----------------------------------+----------------------------+---------------------------|
+| Fibonacci     | 0 if n = 0                       | fib(n-1)+fib(n-2)          | add                       |
+|               | 1 if n = 1                       |                            |                           |
+|---------------+----------------------------------+----------------------------+---------------------------|
+| Merge Sort    | List is size 0 or 1              | msort(left half)           | merge                     |
+|               |                                  | msort(right half)          |                           |
+|---------------+----------------------------------+----------------------------+---------------------------|
+| Binary Search | found or not in list             | search lower or upper      | just return the value     |
+|---------------+----------------------------------+----------------------------+---------------------------|
+| maze          | at exit, at dead end             | solve(unvisited neighbors) | modify the 2D array       |
+|               | at visited                       |                            |                           |
+|---------------+----------------------------------+----------------------------+---------------------------|
+| Knights       | if we've made n*n move           | recursively solve for all  | modify the 2D array with  |
+|               | for an nxn board we're done      | 8 knight moves             | move number               |
+|               |                                  | c+1, r+2, c-1 r+2          |                           |
+|               | If we already visited this space | c+1 r-2, c-1 r-2           |                           |
+|               | return (dead end)                | c+2 r-1, c+2 r+1           |                           |
+|               | If we went off the board return  | c-2 r-1, c-2 r+1           |                           |
+|               | (dead end)                       |                            |                           |
 
 #+begin_src
 
