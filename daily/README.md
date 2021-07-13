@@ -27,10 +27,22 @@
 	4. Comment out the lines that solve the maze and uncomment the
        lines that solve the knights tour in Driver.java.
 	5. Modify Knights.java so that it solves the Knights
-       tour. Guidelines andhints are comments in the file.
+       tour. Guidelines and hints are comments in the file.
 	
 ## Day 2 - July 13
+### Maze lab
+	0. Review of maze code.
+	1. Draw a simple maze and trace through the maze code as directed by instructor.
+### Knights tour
+	0. Overview
+	1. Comment out the lines in Driver.java that call the maze solver.
+	2. Uncomment the lines that create an instance of Knights in Driver.java.
+	3. Use Maze.java as a template to complete Knights.java (see hints in the comments in Knights.java)
+	4. Test by uncommenting the call to k.solve() in Driver.java
+	
 ## Day 3 - July 14
+### Maze tracing and Knights tour lab
+
 ## Day 4 - July 15
 ## Day 5 - July 16
 ## Day 6 - July 19
