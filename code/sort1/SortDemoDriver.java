@@ -19,10 +19,10 @@ public class SortDemoDriver {
 	System.out.println("sd2["+ i + "] = "+sd2.get(i)+" : " + sd2);
 	
 	/* part 3 test lines */
-	/*
-	  System.out.println(sd);
+
+	System.out.println(sd);
 	  sd.sort();
 	  System.out.println(sd);
-	*/
+
     }
 }
