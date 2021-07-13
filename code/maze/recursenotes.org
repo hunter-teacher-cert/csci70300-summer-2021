@@ -1,0 +1,27 @@
+
+| Problem       | Base case            | recursive call(s)          | what to do when returning |
+|---------------+----------------------+----------------------------+---------------------------|
+| Factorial     | 1, if n = 0          | fact(n-1)                  | multiply                  |
+|---------------+----------------------+----------------------------+---------------------------|
+| Fibonacci     | 0 if n = 0           | fib(n-1)+fib(n-2)          | add                       |
+|               | 1 if n = 1           |                            |                           |
+|---------------+----------------------+----------------------------+---------------------------|
+| Merge Sort    | List is size 0 or 1  | msort(left half)           | merge                     |
+|               |                      | msort(right half)          |                           |
+|---------------+----------------------+----------------------------+---------------------------|
+| Binary Search | found or not in list | search lower or upper      | just return the value     |
+|---------------+----------------------+----------------------------+---------------------------|
+| maze          | at exit, at dead end | solve(unvisited neighbors) | modify the 2D array       |
+|               | at visited           |                            |                           |
+
+#+begin_src
+
+if (base case){
+  maybe do something and then always return something
+}
+
+maybe do something 
+make recursive call(s) to solve a simpler subproblem 
+maybe do something else
+return the result
+#+end_src
