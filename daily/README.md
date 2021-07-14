@@ -56,6 +56,10 @@
 
 
 ## Day 5 - July 15
+### Linked List Lab
+	Start with our Llist.java from code/lists and add the following functionality:
+	1. 
+	
 ## Day 6 - July 16
 ## Day 7 - July 19
 ## Day 8  - July 20
