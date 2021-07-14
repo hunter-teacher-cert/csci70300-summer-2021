@@ -56,9 +56,11 @@
 
 
 ## Day 5 - July 15
+### Finish addFront method (15 minutes)
+
 ### Linked List Lab
-	Start with our Llist.java from code/lists and add the following functionality:
-	1. 
+	Start with our Llist.java from code/lists and complete the methods (preferably in the order given). 
+	
 	
 ## Day 6 - July 16
 ## Day 7 - July 19
