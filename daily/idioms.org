@@ -74,3 +74,22 @@ y = tmp;
   }
   
 #+end_src
+
+* process a 2D array
+Notice that the inner 3 lines is the traverse a 1D array idiom and the
+outer loop is also a traverse a 1D array idiom.
+
+#+begin_src java
+  for (row = 0; row < a.size(); row++){
+  
+      for (col = 0; col < a[row].size(); col++){
+          // do stuff
+          }
+  
+  
+  }
+  
+  
+  
+  
+#+end_src
