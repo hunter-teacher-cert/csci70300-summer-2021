@@ -40,14 +40,43 @@ public class Driver{
 	b.setNext(c);
 	c.setNext(d);
 	d.setNext(e);
+	System.out.println("Part 1:");
+	// remember not to lose the head / start
+	// of the list - make a copy
+	Node currentNode;
+	currentNode = L;
+	while (currentNode != null){
+	    System.out.print(currentNode+"->");
+	    // this is like i=i+1 is for arrays
+	    // but for linked lists 
+	    currentNode = currentNode.getNext();
+	}
+	System.out.println("null");
+
 	//2
 	Node x = new Node("X");
 	x.setNext(c);
 	b.setNext(x);
+	System.out.println("Part 2:");
+	currentNode = L;
+	while (currentNode != null){
+	    System.out.print(currentNode+"->");
+	    // this is like i=i+1 is for arrays
+	    // but for linked lists 
+	    currentNode = currentNode.getNext();
+	}
+	System.out.println("null");
 
 	//3
 	b.setNext(d);
-	
+	currentNode = L;
+	while (currentNode != null){
+	    System.out.print(currentNode+"->");
+	    // this is like i=i+1 is for arrays
+	    // but for linked lists 
+	    currentNode = currentNode.getNext();
+	}
+	System.out.println("null");
 
 	/* Or:
 	   L = new Node("a");
