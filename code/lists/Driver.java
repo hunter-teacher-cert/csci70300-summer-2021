@@ -85,6 +85,14 @@ public class Driver{
 	   L.getNext().getNext().setNext(new Node("D"));
 	   etc
 	*/
+
+	System.out.println("\n");
+	System.out.println("Llist");
+	System.out.println("-----------");
+	
+	Llist ll = new Llist();
+	System.out.println(ll);
+	
 	
     }
 }
