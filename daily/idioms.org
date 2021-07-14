@@ -1,4 +1,12 @@
 
+* swap variables x and y
+#+begin_src
+tmp = x;
+x = y;
+y = tmp;
+
+#+end_src
+
 * Traverse an array
 #+begin_src java
   for (i=0;i<a.size();i++){
