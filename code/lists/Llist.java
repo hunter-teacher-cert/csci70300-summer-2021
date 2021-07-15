@@ -38,15 +38,21 @@ public class Llist{
     // returns True if there is nothing in the list
     // False otherwise
     public boolean isEmpty(){
-	return false;
+	return front==null; // could also return !front
     }
 
     // returns the number of items in the list
     // Hint: look at the toString
     // to remind you how to traverse down the list
     public int length(){
+	Node currentNode = front;
+	int count = 0;
+	while (currentNode != null){
+	    count = count + 1;
+	    currentNode = currentNode.getNext();
+	}
 	return 0;
-    }
+	}
 
     // returns the item at location index;
     // returns null if there aren't enough
