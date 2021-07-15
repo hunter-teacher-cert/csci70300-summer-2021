@@ -51,8 +51,8 @@ public class Llist{
 	    count = count + 1;
 	    currentNode = currentNode.getNext();
 	}
-	return 0;
-	}
+	return count;
+    }
 
     // returns the item at location index;
     // returns null if there aren't enough
