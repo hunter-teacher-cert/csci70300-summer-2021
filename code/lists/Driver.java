@@ -93,6 +93,14 @@ public class Driver{
 	Llist ll = new Llist();
 	System.out.println(ll);
 	
-	
+	ll.addFront("a");
+	System.out.println(ll);
+
+		
+	ll.addFront("b");
+	System.out.println(ll);
+
+	ll.addFront("c");
+	System.out.println(ll);
     }
 }
