@@ -50,7 +50,7 @@ public class Llist{
 
     // returns the item at location index;
     // returns null if there aren't enough
-    // items
+    // items. Starts with index 0
     public String get(int index){
 	return null;
 	
