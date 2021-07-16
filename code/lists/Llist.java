@@ -106,28 +106,43 @@ public class Llist{
     // You will need a variable that refers to
     // the node BEFORE you want to do the insertion.
     public void insert(int index, String value){
+
 	Node prev=null;
 	Node current=front;
 	int count = 0;
 
+	// This piggybacks the pointers - prev follows
+	// current 
 	while (current != null && count != index){
 	    prev = current;
 	    current = current.getNext();
 	    count = count + 1;
 	}
 
-	// can only insert if index is in range
+	// at this point, current points to the insertion location (or
+	// null) and prev to the node ahead of it (or null in case
+	// insertion isat the beginning.
+
+	
+	// we can only insert if index is in range
 	if (current==null){
 	    return;
 	}
 
+	// create the new node and set it's next to the current node
+	// (where we're inserting.
 	Node newNode=new Node(value);
 	newNode.setNext(current);
+	
+	// this handles the special case.
+	// if prev isn't null we're at some interior node so we
+	// can just insert it.
 	if(prev!=null){
 	    prev.setNext(newNode);
 	} else{
 	    // if prev was null we're inserting at the front
-	    // which is a special case
+	    // which is a special case and we have to make front
+	    // point to (refer to) the new node.
 	    front = newNode;
 	}
 	
