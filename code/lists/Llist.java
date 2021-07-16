@@ -106,7 +106,32 @@ public class Llist{
     // You will need a variable that refers to
     // the node BEFORE you want to do the insertion.
     public void insert(int index, String value){
+	Node prev=null;
+	Node current=front;
+	int count = 0;
 
+	while (current != null && count != index){
+	    prev = current;
+	    current = current.getNext();
+	    count = count + 1;
+	}
+
+	// can only insert if index is in range
+	if (current==null){
+	    return;
+	}
+
+	Node newNode=new Node(value);
+	newNode.setNext(current);
+	if(prev!=null){
+	    prev.setNext(newNode);
+	} else{
+	    // if prev was null we're inserting at the front
+	    // which is a special case
+	    front = newNode;
+	}
+	
+	
     }
 
     // returns the index of the first item with

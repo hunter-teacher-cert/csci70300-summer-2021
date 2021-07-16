@@ -102,5 +102,17 @@ public class Driver{
 
 	ll.addFront("c");
 	System.out.println(ll);
+
+	Llist ll2 = new Llist();
+	ll2.insert(5,"a");
+	System.out.println(ll2);
+	ll2.insert(0,"b");
+	System.out.println(ll2);
+	ll2.addFront("c");
+	ll2.insert(0,"d");
+	System.out.println(ll2);	
+	ll2.insert(1,"e");
+	System.out.println(ll2);
+
     }
 }
