@@ -55,6 +55,7 @@
 	3. Write the code to delete the c
 
 
+
 ## Day 5 - July 15
 ### Finish addFront method (15 minutes)
 
@@ -63,7 +64,13 @@
 	
 	
 ## Day 6 - July 16
+### Completed linked list lab 
+### Linked list and ArrayList comparison
 ## Day 7 - July 19
+### Linked List code review
+### built in LinkedList
+### Stacks and Queues
+### Review of sorting and searching
 ## Day 8  - July 20
 ## Day 98 - July 21
 ## Day 10 - July 22
