@@ -58,7 +58,24 @@ public class Llist{
     // returns null if there aren't enough
     // items. Starts with index 0
     public String get(int index){
-	return null;
+	// be careful not to run off the end of the list
+	// move a reference to the node we want to get
+	// traverse idiom
+	int count = 0;
+	Node currentNode = front;
+	while (currentNode != null && count != index){
+	    currentNode = currentNode.getNext();
+	    count = count + 1;
+	}
+	
+	// once there, return the data in that node
+	if (currentNode == null){
+	    return null;
+	} else {
+	    return currentNode.getData();
+	    
+	}
+	
 	
     }
 
@@ -66,6 +83,19 @@ public class Llist{
     // with 0) to value.
     // only sets if the index is within range
     public void set(int index, String value){
+
+	int count = 0;
+	Node currentNode = front;
+	while (currentNode != null && count != index){
+	    currentNode = currentNode.getNext();
+	    count = count + 1;
+	}
+	
+	// once there, set the new data
+	if (currentNode != null){
+	    currentNode.setData(value);
+	}
+
 
     }
 
