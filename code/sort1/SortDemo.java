@@ -115,5 +115,45 @@ public class SortDemo{
 	return ""+data;
     };
 
+    /*------------------------- MERGESORT STUFF -----------------*/
+
+
+    // Preconditions: a and b are ArrayLists of Integers and
+    //                both are in increasing order
+    // Return: a new ArrayList of Integers that is the result
+    //         of merging a and b. The new ArrayList
+    //         should be in increasing order
+    private ArrayList<Integer> merge(ArrayList<Interger> a,
+				     ArrayList<Integer> b){
+
+	return null;
+    }
+    
+    
+    private ArrayList<Integer> fillForMerge(int size){
+	ArrayList<Integer> a = new ArrayList<Integer>();
+	int lastVal = r.nextInt(10);
+	for (int i = 0 ; i < size ; i=i+1){
+	    a.add(lastVal);
+	    lastVal = lastVal + r.nextInt(10);
+	}
+	return a;
+	
+    }
+    public void testMerge(){
+
+	ArrayList<Integer> a = new ArrayList<Integer>();
+	ArrayList<Integer> b = new ArrayList<Integer>();
+	a = fillForMerge(20);
+	b = fillForMerge(20);
+	System.out.println(a);
+	System.out.println(b);
+	
+	
+
+    }
+    
+
+    
 }
 
