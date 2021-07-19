@@ -43,7 +43,24 @@
 	(the current node). Implement all methods that we implemented for
 	the singly linked list.
 	
+  - Quicksort Folder: ds/qsort
+  
+    Write a program that implements the Quicksort algorithm as we
+    explored in class.
 
+  - hash table Folder: ds/hash
+  
+    Write a program that implements an open hash table. You must
+    implement the hash function and the following methods:
+	
+	- constructor(s)
+	- hasKey(key) - returns True if the hash  table contains key
+	- get(k) - returns value of the item with key k (if present).
+	- isEmpty() - returns true if the hash table is empty.
+	- put(k,v) - adds an item with key k and value v to the hash table.
+	- remove(k) - removes theitem with key k from the hash table (this
+      method is optional, only complete if you have time.
+	
 ## Day 0 - July 9
 ### Class intro
 
