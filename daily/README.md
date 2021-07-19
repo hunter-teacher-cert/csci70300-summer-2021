@@ -1,5 +1,49 @@
 # Daily Assignments / Notes
 
+## Deliverables
+### Required
+	Specifications given with each assignment in class
+  - Selection sort
+  - linear and binary search
+  - Singly linked list
+  - Merge sort
+  - Mode lab
+  - more will be added as we progress through the class
+### Final project  (complete at least 2, more to supplement earlier work)
+  complete at least two of these. You can complete more to supplement
+  prior work in this class that you didn't complete. For each
+  assignment you complete, put all code in a folder as specified in
+  the project.
+  - Knights tour Folder: ds/knights 
+  
+    Write a program to solve the Knights tour, that is, find a sequence
+    of moves such that a knight can visit every square once without
+    repeating. Your program should work on any size board but should
+    be set to default to a 5x5. Note that not all board sizes have
+    solutions and not all board sizes have solutions from all
+    locations.
+	
+  - Queue Folder: ds/queue
+	
+	Create a class  that represents a queue. This class should use a linked list with at least two pointers. Your class should implement the following methods:
+	
+	- constructor(s)
+	- enqueue(value) <-- add value to the end of the queue
+	- x = dequeue() <-- remove and return the value at the front of the queue
+	- x = front() <-- return but don't remove the value at the front
+	- isEmpty() <-- returns true if the queue is empty
+	- size() <-- returns the number of items in the queue
+  - Doubly Linked List Folder: ds/dlist 
+  
+    Implement a doubly linked
+	list. A doubly linked list is similar to a linked list but has
+	both next and previous references. Your doubly linked list should
+	have private instance variables for prev and next (and anything
+	else you need). If you'd like you can also have one for current
+	(the current node). Implement all methods that we implemented for
+	the singly linked list.
+	
+
 ## Day 0 - July 9
 ### Class intro
 
@@ -70,8 +114,10 @@
 ### Linked List code review
 ### built in LinkedList
 ### Stacks and Queues
-### Review of sorting and searching
+### Review of sorting and searching 
+### Big O notation
 ## Day 8  - July 20
+### Mergesort implementation lab
 ## Day 98 - July 21
 ## Day 10 - July 22
 ## Day 11 - July 23
