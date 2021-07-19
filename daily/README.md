@@ -61,7 +61,8 @@
 	- remove(k) - removes theitem with key k from the hash table (this
       method is optional, only complete if you have time.
 	
-  - Heapsort FOlder: ds/heap 
+  - Heapsort Folder: ds/heap 
+  
 	Write an implementation of the heapsort algorithm.
 	  
 ## Day 0 - July 9
