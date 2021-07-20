@@ -102,13 +102,13 @@ public class SortDemo{
 	
 	
 	return 0; // replace this return
-	}
+    }
     
-	/* If you finish the lab early you can get started on this */
-	public int binarySearch(int value){
-	    return 0;
+    /* If you finish the lab early you can get started on this */
+    public int binarySearch(int value){
+	return 0;
 	    
-	}
+    }
     
 	
     public String toString(){
@@ -126,9 +126,61 @@ public class SortDemo{
     private ArrayList<Integer> merge(ArrayList<Integer> a,
 				     ArrayList<Integer> b){
 
+	ArrayList<Integer> result = new ArrayList<Integer>();
+
+	// merge by moving indices down the ArrayLists
+	// int aIndex = 0;
+	// int bIndex = 0;
+	// while (aIndex < a.size() && bIndex < b.size()){
+	//     if (a.get(aIndex) < b.get(bIndex)){
+	// 	result.add(a.get(aIndex));
+	// 	aIndex = aIndex + 1;
+	//     } else {
+	// 	result.add(b.get(bIndex));
+	// 	bIndex = bIndex + 1;
+	//     }
+	// }
+
+	// // copy over anthing else
+	// // we know that either a or b will be finished
+	// while (aIndex < a.size()){
+	//     result.add(a.get(aIndex));
+	//     aIndex = aIndex + 1;
+	// }
+
+	// while (bIndex < b.size()){
+	//     result.add(b.get(bIndex));
+	//     bIndex = bIndex + 1;
+	// }
+
+	while (!a.isEmpty() && !b.isEmpty()){
+	    if (a.get(0) < b.get(0)) {
+		result.add(a.get(0));
+		a.remove(0);
+	    } else {
+		// remove also returns the value so we
+		// don't really need the get we used above
+		result.add(b.remove(0));
+	    }
+
+	}
+
+	// copy the rest once we're at the end of one of the lists
+	while (!a.isEmpty()){
+	    result.add(a.remove(0));
+	}
+	while (!b.isEmpty()){
+	    result.add(b.remove(0));
+	}
+	
+	
+	return result;
+	}
+    
+    public ArrayList<Integer> msort(ArrayList<Integer> l){
+
 	return null;
     }
-    
     
     private ArrayList<Integer> fillForMerge(int size){
 	ArrayList<Integer> a = new ArrayList<Integer>();
@@ -144,10 +196,12 @@ public class SortDemo{
 
 	ArrayList<Integer> a = new ArrayList<Integer>();
 	ArrayList<Integer> b = new ArrayList<Integer>();
-	a = fillForMerge(20);
-	b = fillForMerge(20);
+	a = fillForMerge(10);
+	b = fillForMerge(10);
 	System.out.println(a);
 	System.out.println(b);
+	ArrayList<Integer> result = merge(a,b);
+	System.out.println(result);
 	
 	
 
