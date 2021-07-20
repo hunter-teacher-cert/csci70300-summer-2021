@@ -29,7 +29,7 @@ public class SortDemo{
 
     /* Instance Variables */
     private ArrayList<Integer> data;  // to store the data
-
+    
     private Random r; 
 
     
@@ -123,7 +123,7 @@ public class SortDemo{
     // Return: a new ArrayList of Integers that is the result
     //         of merging a and b. The new ArrayList
     //         should be in increasing order
-    private ArrayList<Integer> merge(ArrayList<Interger> a,
+    private ArrayList<Integer> merge(ArrayList<Integer> a,
 				     ArrayList<Integer> b){
 
 	return null;
