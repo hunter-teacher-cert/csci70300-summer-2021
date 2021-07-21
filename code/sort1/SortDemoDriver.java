@@ -26,7 +26,10 @@ public class SortDemoDriver {
 	  System.out.println(sd);
 	*/
 
-	sd.testMerge();
+	System.out.println(sd);
+	sd.msortTest();
+	System.out.println(sd);
+	
 
 	      
 
