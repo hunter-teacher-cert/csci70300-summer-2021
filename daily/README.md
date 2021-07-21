@@ -25,7 +25,7 @@
 	
   - Queue Folder: ds/queue
 	
-	Create a class  that represents a queue. This class should use a linked list with at least two pointers. Your class should implement the following methods:
+	Create a class  that represents a queue. This class should use a linked list that you build (not the built in Java class)  with at least two pointers. Your class should implement the following methods:
 	
 	- constructor(s)
 	- enqueue(value) <-- add value to the end of the queue
