@@ -4,9 +4,8 @@ import java.util.*;
 public class SortDemoDriver {
     public static void main(String[] args) {
 
-	SortDemo sd = new SortDemo();
 	/*
-	System.out.println(sd);
+	  System.out.println(sd);
 
 	  SortDemo sd2 = new SortDemo(20);
 	System.out.println(sd2);
@@ -25,11 +24,28 @@ public class SortDemoDriver {
 	  sd.sort();
 	  System.out.println(sd);
 	*/
+	long start, elapsed;
+	int size;
 
-	System.out.println(sd);
-	sd.msortTest();
-	System.out.println(sd);
-	
+	size = 200000;
+	// SortDemo sds = new SortDemo(size);
+	// start = System.currentTimeMillis();
+	// sds.sort();
+	// elapsed = System.currentTimeMillis() - start;
+	// System.out.println("Selection on size " + size + " : " + elapsed);
+
+	SortDemo sdm = new SortDemo(size);
+	start = System.currentTimeMillis();
+	sdm.msortTest();
+	elapsed = System.currentTimeMillis() - start;
+	System.out.println("Selection on size " + size + " : " + elapsed);
+
+	SortDemo sdb = new SortDemo(size);
+	start = System.currentTimeMillis();
+	sdb.builtinSort();
+	elapsed = System.currentTimeMillis() - start;
+	System.out.println("Selection on size " + size + " : " + elapsed);
+
 
 	      
 

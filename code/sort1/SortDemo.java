@@ -186,25 +186,43 @@ public class SortDemo{
     */
     public ArrayList<Integer> msort(ArrayList<Integer> l){
 	
-	ArrayList<Integer> left = null;
-	ArrayList<Integer> right = null;
+	ArrayList<Integer> left = new ArrayList<Integer>();
+	ArrayList<Integer> right = new ArrayList<Integer>();;
 
 	// base case - if the input ArrayList is smaller than 2 elements
-
+	if (l.size() < 2){
+	    return l;
+	}
+	
 	// split l into left and right halves
+	int mid = l.size()/2;
+	int i;
+
+	for(i=0; i < mid; i++){
+	    left.add(l.get(i));
+	}
+
+	// at this point, left has all the left hand stuff
+	// and i should be at the midpoint
+
+	for (i=mid; i < l.size(); i++){
+	    right.add(l.get(i));
+	}
 
 	// sort the left half
-
+	left = msort(left);
 	// sort the right half
-
+	right = msort(right);
 	// merge the two halves that have been sorted
-
-	// return the result
+	ArrayList<Integer> result = merge(left,right);
 	
-	return null;
+	// return the result
+	return result;
+	
     }
 
     public void msortTest(){
+
 	data = msort(data);
     }
     
@@ -231,6 +249,11 @@ public class SortDemo{
 	
 	
 
+    }
+
+    public void builtinSort(){
+	Collections.sort(data);
+	
     }
     
 
