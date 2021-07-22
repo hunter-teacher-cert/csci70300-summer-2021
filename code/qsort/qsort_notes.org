@@ -1,0 +1,56 @@
+
+quick sort is in-place sort because we can do it all in the original single
+array without any extras (just a few variables) but the code can get a
+little hairy.
+
+merge-sort requires at least one extra data set, usually more. It's
+not in place.
+
+* Recommendation:
+If you decide to implement the quicksort I recommend making extra
+arrays or ArrayLists and copying over the data.
+* Runtime
+partitioning takes O(n)
+
+if we choose a bad pivot (like the minimum) then each time through
+we only get one more item in order so we have O(n) levels
+
+if we choose a good pivot (like the median) then each time through
+we split the data set in half so we have O(lgn) levels (like the
+mergesort.
+
+Worst case runtime is O(n^2) if we choose the worst partition
+Average case turns out to be O(nlgn) if we choose reasonably
+good partitions and in practice qsort is very fast because it
+can be coded with low constants.
+
+pivot take the median of a[0], a[last], a[middle]. This can be
+done in constant time. 
+
+* Data:
+5,3,2,8,12,15,9,6,14,1
+* Qsort(data set)
+** if data set is size 0 or 1 just return 
+** Partition the data set
+*** Select a pivot element (the element to partition around)
+*** reorder the list such that
+**** everything less than the pivot value is before the pivot value
+**** everything > than the pivot value is after the pivot value
+**** (items equal should all go on one side or the other but not both)
+**** This operation gives us a partial ordereing
+***** the pivot is at it's final location
+***** we know that everything to the left is <
+***** and everything to the right is >
+*** Note that we now have a sub-dataset on the left
+*** a sub-dataset on the right and the pivot which is in place
+** qsort(left side), qsort(right side)
+
+#+begin_src
+qsort(data){
+  if data set is size 0 or 1 just return
+  pivot = a value from data
+  partition data around pivot
+  qsort(left side of pivot element)
+  qsort(right side of pivot element) 
+}
+#+end_src
