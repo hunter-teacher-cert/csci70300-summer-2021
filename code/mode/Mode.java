@@ -29,10 +29,14 @@ public class Mode{
      Find and return the smallest value in  InputData.
     */
 
-    public int findSmalletValue(){
-
-	return 0;
-	
+    public int findSmallestValue(){
+	int smallestValue =  inputData.get(0);
+	for (int i = 0 ; i < inputData.size() ; i++){
+	    if (inputData.get(i) < smallestValue){
+		smallestValue = inputData.get(i);
+	    }
+	}
+	return smallestValue;
     }
 	
     /**
@@ -41,7 +45,13 @@ public class Mode{
      Returns the frequency of value in inputData, that is, how often value appears
     */
     public int frequency(int value){
-	return 0;
+	int count=0;
+	for (int i=0 ; i < inputData.size() ; i++){
+	    if (value == inputData.get(i)) {
+		count = count + 1;
+	    }
+	}
+	return count;
     }
 
     /**
@@ -50,17 +60,27 @@ public class Mode{
      The mode is the value that appears most frequently so if inputData contained
      5,3,8,2,5,9,12,5,12,6,5, the mode would return 5 since 5 appears four times. 
 
-     If there are multiple modes such as in the case with this data set: 5,5,2,9,9,6 you should return
-     either of them (the 5 or the 9).
+	 If there are multiple modes such as in the case with this data set: 5,5,2,9,9,6 you should return
+	 either of them (the 5 or the 9).
 
-     Note: you will probably use the frequency function you wrote in
-     this solution but not findSmallestValue. the findSmallestValue
-     function will help you find a strategy for approaching finding the mode.
-    */
-    public int calcMode(){
-
-	return 0;
-    }
+	 Note: you will probably use the frequency function you wrote in
+	 this solution but not findSmallestValue. the findSmallestValue
+	 function will help you find a strategy for approaching finding the mode.
+	*/
+	public int calcMode(){
+	    int modeSoFar = inputData.get(0);
+	    int countSoFar = frequency(modeSoFar);
+	    for (int i=0 ; i < inputData.size() ; i++){
+		int f = frequency(inputData.get(i));
+		if (f>countSoFar){
+		    countSoFar = f;
+		    modeSoFar = inputData.get(i);
+		}
+	    }
+	    
+	    return modeSoFar;
+	}
+    
     public String toString(){
 	return ""+inputData;
     }

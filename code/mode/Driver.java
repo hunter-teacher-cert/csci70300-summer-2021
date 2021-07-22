@@ -7,6 +7,7 @@ public class Driver{
 	Mode m = new Mode();
 
 	System.out.println(m);
+	System.out.println(m.calcMode());
     }
     
 }
