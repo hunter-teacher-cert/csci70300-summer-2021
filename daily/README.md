@@ -139,9 +139,15 @@
 ### Big O notation
 ## Day 8  - July 20
 ### Mergesort implementation lab
-## Day 98 - July 21
+## Day 9 - July 21
+### Mergesort lab completion and runtime analysis
+### Quicksort intro
 ## Day 10 - July 22
+### Quicksort conclusion
+### Mode lab
 ## Day 11 - July 23
+### mode lab conclusion
+### Tree introdcution
 ## Day 12 - July 26
 ## Day 13 - July 27
 ## Day 14 - July 28
