@@ -99,9 +99,7 @@ public class Mode{
 	    int v = inputData.get(i);
 	    tallies[v] = tallies[v] + 1;
 	}
-	for (i=0;i<maxVal; i++){
-	    System.out.print(tallies[i]+", ");
-	}
+
 
 	int maxIndex = 0;
 	int maxCount = tallies[0];
