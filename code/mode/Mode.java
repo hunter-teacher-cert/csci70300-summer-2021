@@ -6,20 +6,27 @@ import java.util.*;
 public class Mode{
     private ArrayList<Integer> inputData;
     private Random r;
+    private int maxVal = 50;
+
+    // make an ArrayList of 20 random elements
+    // each up to maxVal
     public Mode(){
 	r = new Random();
 	inputData = new ArrayList<Integer>();
 	
 	for (int i=0; i < 20; i++){
-	    inputData.add(r.nextInt(20));
+	    inputData.add(r.nextInt(maxVal));
 	}
     }
+
+    // make an ArrayList of size random elements
+    // each up to maxVal
     public Mode(int size){
 	r = new Random();
 	inputData = new ArrayList<Integer>();
 	
 	for (int i=0; i < size; i++){
-	    inputData.add(r.nextInt(50));
+	    inputData.add(r.nextInt(maxVal));
 	}
     }
 
@@ -80,6 +87,36 @@ public class Mode{
 	    
 	    return modeSoFar;
 	}
+
+    public int fastMode(){
+	int[] tallies = new int[maxVal];
+	int i;
+	for (i=0;i<maxVal; i++){
+	    tallies[i]=0;
+	}
+
+	for (i=0;i<inputData.size();i++){
+	    int v = inputData.get(i);
+	    tallies[v] = tallies[v] + 1;
+	}
+	for (i=0;i<maxVal; i++){
+	    System.out.print(tallies[i]+", ");
+	}
+
+	int maxIndex = 0;
+	int maxCount = tallies[0];
+	for (i=0;i<maxVal;i++){
+	    if (tallies[i] > maxCount){
+		maxCount = tallies[i];
+		maxIndex = i;
+	    }
+	}
+	return maxIndex;
+	
+
+
+    }
+    
     
     public String toString(){
 	return ""+inputData;
