@@ -16,6 +16,21 @@ This assignment is about data structure design. You are not expected
 to write a fully working Java implementation or even any code although
 you can write Java code as part of your descriptions.
 
+## Another imnportant note
+
+In this design you can only use constructs we've covered in class. You can tweak them and combine them however you want though. Things you can use:
+
+ - arrays
+ - ArrayLists
+ - LinkedList (the built in one)
+ - Things that you can build out of pointers 
+   - linked lists we make ourself
+   - Binary Search or other trees
+   - Other Node / Link based structures we can build
+- Methods / Classes we define and basic language constructs and data
+  types.
+   
+
 ## Description and questions
 
 You are going to create a data structure to represent a phone
