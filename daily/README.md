@@ -8,7 +8,7 @@
   - Singly linked list
   - Merge sort
   - Mode lab
-  - more will be added as we progress through the class
+  - Binary Search Tree implementation
 ### Final project  (complete at least 2, more to supplement earlier work)
   complete at least two of these. You can complete more to supplement
   prior work in this class that you didn't complete. For each
@@ -64,7 +64,12 @@
   - Heapsort Folder: ds/heap 
   
 	Write an implementation of the heapsort algorithm.
-	  
+  - Other ideas (you'll have to research these on your own)
+    - Markov chain text generators
+    - n-queens
+    - Priority queue	  
+    - Anything else you come up with that makes use of or extends our data structures
+     
 ## Day 0 - July 9
 ### Class intro
 
